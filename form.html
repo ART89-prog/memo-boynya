@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=414, user-scalable=no">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#195374">
+		<meta name="theme-color" content="#195374">
+
+		<!-- Подключение шрифтов с гугла -->
+		
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" async>
+		<link rel="stylesheet" href="css/swiper.css" async>
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+	</head>
+
+	<body>
+		<div class="wrap" style="background:none;">
+			<div class="main">
+				<section class="modal" id="access_modal">
+					<div class="cont">
+						<div class="modal_title title">Оформление<br> заказа</div>
+
+						<form action="">
+							<label>Кол-во наборов:</label>
+							<div class="amount" data-column="Кол-Во">
+								<div class="amount_box">
+									<button type="button" class="minus update_price">
+										<img src="images/minus2.svg" alt="">
+									</button>
+
+									<input type="number" value="1" class="input update_price count_input"
+									data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+									<button type="button" class="plus update_price">
+										<img src="images/plus2.svg" alt="">
+									</button>
+								</div>
+								<div class="summa"><span> 3900</span>₽</div>
+							</div>
+
+							<label>Способ доставки:</label>
+							<div class="delivery">									
+								<div class="form_radio">									
+									<input id="radio" type="radio" name="radio" value="" checked>
+									<label for="radio"><img class="cat__image" src="images/delivery-logo1.png" alt=""></label>                            
+								</div>
+								<div class="form_radio">									
+									<input id="radio2" type="radio" name="radio" value="">
+									<label for="radio2"><img class="cat__image" src="images/delivery-logo2.png" alt="" style="max-width: 66px;"></label>                            
+								</div>
+							</div>					
+					
+							<div class="line">
+								<div class="field">
+									<label for="adress">Адрес отделения:</label>
+									<input type="text" name="adress" value="" class="input" placeholder="г. Москва, ул. Ленина 27">
+								</div>
+								<div class="field">
+									<label for="adress">ФИО получателя</label>
+									<input type="text" name="adress" value="" class="input" placeholder="Иванов Иван Иванович">
+								</div>
+								<div class="field">
+									<label for="adress">Номер телефона</label>
+									<input type="tel" name="adress" value="" class="input" placeholder="+7 (923) 922-26-50">
+								</div>
+								<div class="field">
+									<label for="adress">Электронная почта</label>
+									<input type="email" name="adress" value="" class="input" placeholder="name@mail.ru">
+								</div>
+							</div>
+							<div class="submit">
+								<button type="submit" class="btn-main">
+									оплатить
+								</button>
+							</div>
+							<img data-src="images/payments_img.png" alt="" class="payments_img lazyload">
+							<div class="agree">При нажатии на кнопку “Оплатить”<br>
+								вы соглашаетесь с <a href="#">политикой<br> конфенденциальности и договором оферты</a></div>	
+						</form>			
+					</div>
+					
+					
+				</section>
+			</div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/countdown.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
